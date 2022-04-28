@@ -6,32 +6,30 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
-import { RecipeListComponent } from './recipes/recipe-list.import { Component, OnInit } from '@angular/core';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppintEditComponent } from './shopping-list/shoppint-edit/shoppint-edit.component';
 
-@Component({
-  selector: 'selector-name',
-  templateUrl: 'name.component.html'
-})
 
-export class NameComponent implements OnInit {
-  constructor() { }
+  @NgModule( {
+    declarations: [
+      AppComponent,
+      HeaderComponent,
+      RecipesComponent,
+      RecipeListComponent,
+      RecipeDetailsComponent,
+      RecipeItemComponent,
+      ShoppingListComponent,
+      ShoppintEditComponent
+    ],
+    imports: [
+      BrowserModule,
+      FormsModule,
 
-  ngOnInit() { }
-}';
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+  } )
+  export class AppModule { }
