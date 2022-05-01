@@ -10,7 +10,7 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppintEditComponent } from './shopping-list/shoppint-edit/shoppint-edit.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 
 
   @NgModule( {
@@ -22,7 +22,7 @@ import { ShoppintEditComponent } from './shopping-list/shoppint-edit/shoppint-ed
       RecipeDetailsComponent,
       RecipeItemComponent,
       ShoppingListComponent,
-      ShoppintEditComponent
+      ShoppingEditComponent
     ],
     imports: [
       BrowserModule,
